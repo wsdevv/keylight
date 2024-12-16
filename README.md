@@ -5,3 +5,5 @@ Iced.rs + sqlcipher password manager
 
 Once "finished", use at your own risk
 I am not a cryptography professional
+
+Open source, not open contribution
