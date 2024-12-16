@@ -1,0 +1,32 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT * FROM Folders;",
+  "describe": {
+    "columns": [
+      {
+        "name": "folder_id",
+        "ordinal": 0,
+        "type_info": "Integer"
+      },
+      {
+        "name": "folder_name",
+        "ordinal": 1,
+        "type_info": "Text"
+      },
+      {
+        "name": "folder_icon",
+        "ordinal": 2,
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": [
+      false,
+      true,
+      true
+    ]
+  },
+  "hash": "5829d5bccb8ce811c6ec8a1b0a10b15279e308c04ed233ae1c8a1575d948f6df"
+}

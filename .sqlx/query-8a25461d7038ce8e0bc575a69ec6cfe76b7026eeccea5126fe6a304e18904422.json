@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "\n            BEGIN;\n            CREATE TABLE IF NOT EXISTS Folders ( folder_id INTEGER PRIMARY KEY AUTOINCREMENT, folder_name VARCHAR(255), folder_icon VARCHAR(255) );\n            CREATE TABLE IF NOT EXISTS Entries ( entry_id INTEGER PRIMARY KEY AUTOINCREMENT, entry_name VARCHAR(255), entry_icon VARCHAR(255), is_deleted BOOLEAN DEFAULT FALSE);\n            CREATE TABLE IF NOT EXISTS EntryTags (tag_id INTEGER PRIMARY KEY AUTOINCREMENT, tag_name VARCHAR(255), entry_id int);\n            CREATE TABLE IF NOT EXISTS EntryData (data_id INTEGER PRIMARY KEY AUTOINCREMENT, section_name VARCHAR(255), section_type VARCHAR(255), section_data BLOB, entry_id int);\n            COMMIT;\n            ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": []
+  },
+  "hash": "8a25461d7038ce8e0bc575a69ec6cfe76b7026eeccea5126fe6a304e18904422"
+}

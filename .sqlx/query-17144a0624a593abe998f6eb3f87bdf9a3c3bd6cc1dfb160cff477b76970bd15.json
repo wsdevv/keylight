@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "BEGIN;\n            INSERT INTO Folders (folder_name, folder_icon) VALUES ('Online', 'default');\n            INSERT INTO Entries (entry_name, entry_icon) VALUES ('Welcome', 'default');\n            INSERT INTO EntryData (section_name, section_type, section_data, entry_id) VALUES ('Letter', 'blob', 'Thanks for using keylight!', 0);\n            COMMIT;",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": []
+  },
+  "hash": "17144a0624a593abe998f6eb3f87bdf9a3c3bd6cc1dfb160cff477b76970bd15"
+}
